@@ -1,15 +1,16 @@
 branch - ветка
-feature(фича) - особенность, свойство, характеристика
-issue - вопрос, проблема
-checkout - проверка, отладка, контроль
-log - журнал
 origin - источник 
-local storage-локальное хранилище
-show - показать;
-origin - источник;
-check out - проверить;
 remote-удалённый, дистанционный;
-
+commit - совершить, фиксировать.
+checkout - проверка, отладка, контроль
+feature(фича) - особенность, свойство, характеристика
+modified - изменённый.
+log - журнал
+show - показать;
+staged - поэтапное
+changes - изменения
+local storage-локальное хранилище
+issue - вопрос, проблема
 
     КОНФИГУРАЦИЯ GIT
 git config --global user.name Alexander86528
@@ -30,14 +31,10 @@ git config --list --show-origin
 git config --list
 git config --list --show-origin
 
-        GIT COMMIT
+    GIT COMMIT
 git commit -m "comment"
 
-commit - совершить, фиксировать.
-modified - изменённый.
-staged - подготовленный.
-
-        GIT DIFF (difference-разница)
+    GIT DIFF (difference-разница)
 git diff - перед индексацией;
 git diff --staged - после индексации;
 Просмотр ненужных пробелов
@@ -71,12 +68,7 @@ git push origin :<name branch>
 удаление метки после слияния веток(после удалений осталась локально метка)
 git fetch --prune
 
-staged - поэтапное
-changes - изменения
-
-
-
- 3. Ветвление
+    3. ВЕТВЛЕНИЕ
 просмотр веток
   git branch
 просмотр ветки и инфа о коммите
