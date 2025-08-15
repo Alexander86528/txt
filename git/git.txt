@@ -11,6 +11,8 @@ staged - поэтапное
 changes - изменения
 local storage-локальное хранилище
 issue - вопрос, проблема
+tracked - отслеживаемые
+untracked - неотслеживаемые
 
     КОНФИГУРАЦИЯ GIT
 git config --global user.name <name>
@@ -38,24 +40,56 @@ git config --global user.email almubuntu5@gmail.com
 git config --global core.editor "nano -w"
 */
 
-    GITIGNORE
-.gitignore
-.directory
-
     GIT CONFIG
 git config --list
   Показывает настройки по умолчанию.
 git config --list --show-origin
   Показывает какие настройки гит и вкаких файлах они находятся.
 
+    GITIGNORE
+.gitignore
+
+.directory
+
+git status
+  Просматривает состояние файлов.
+git add .
+  Добавляет в индекс все файлы.
+git add <name file>
+  Добавляет в индекс <name file>.
+
+
     GIT COMMIT
 git commit -m "comment"
+git commit -a
+  Индексация и коммит.
+git commit --amend
+  Редактирование коммита. Сначала вносятся изменения, индексируется,
+  затем команда commit c --amend. Новый коммит будет принят вместо
+  предыдущего.
 
     GIT DIFF (difference-разница)
-git diff - перед индексацией;
-git diff --staged - после индексации;
-Просмотр ненужных пробелов
+git diff
+  Просмотр изменений перед индексацией;
+git diff --staged
+  Просмотр изменений после индексации;
 git diff --check
+  Просмотр ненужных пробелов
+
+    Удаление/Переименование/Перемещение
+git rm <file>
+  Удаление файла.
+git mv <name file> <new name file>
+  Переименование файла.
+git mv old/file new/file
+  Перемещение из одной папки в другую.
+
+    git log
+git log <-n>
+  Просмотр истории коммитов.
+  <-n> - заданное количество коммитов назад.
+
+
 
     "Буфер обмена"
 stash - припрятать;
