@@ -1,7 +1,15 @@
-
-feature -  особенность, характеристика, свойство
+branch - ветка
+feature(фича) - особенность, свойство, характеристика
+issue - вопрос, проблема
+checkout - проверка, отладка, контроль
+log - журнал
 origin - источник 
 local storage-локальное хранилище
+show - показать;
+origin - источник;
+check out - проверить;
+remote-удалённый, дистанционный;
+
 
     КОНФИГУРАЦИЯ GIT
 git config --global user.name Alexander86528
@@ -18,30 +26,22 @@ git config --list --show-origin
 .gitignore
 .directory
 
-
-
     GIT CONFIG
 git config --list
 git config --list --show-origin
-show - показать;
-origin - источник;
-
-GIT ADD.
 
         GIT COMMIT
 git commit -m "comment"
+
 commit - совершить, фиксировать.
 modified - изменённый.
 staged - подготовленный.
-
-git status
 
         GIT DIFF (difference-разница)
 git diff - перед индексацией;
 git diff --staged - после индексации;
 Просмотр ненужных пробелов
 git diff --check
-
 
     "Буфер обмена"
 stash - припрятать;
@@ -55,9 +55,7 @@ gti log --oneline
 git show <хеш>.
 
 git checkout <file> "возврат изменений".
-check out - проверить;
 
-remote-удалённый, дистанционный;
 nothing to commit, working tree clean - ничего не нужно предпринимать, рабочее дерево чистое.
 Your branch is up to date with 'origin/master'-в вашей ветке обновлено значение origin / master.
 
@@ -76,11 +74,7 @@ git fetch --prune
 staged - поэтапное
 changes - изменения
 
-branch - ветка
-feature(фича) - особенность, свойство, характеристика
-issue - вопрос, проблема
-checkout - проверка, отладка, контроль
-log - журнал
+
 
  3. Ветвление
 просмотр веток
