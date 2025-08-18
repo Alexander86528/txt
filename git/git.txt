@@ -58,6 +58,10 @@ git add .
 git add <name file>
   Добавляет в индекс <name file>.
 
+git restore <name file>
+  Отмена изменений в файле до индексации.
+git restore --staged <name file>
+  Отмена индексации файла.
 
     GIT COMMIT
 git commit -m "comment"
@@ -110,8 +114,6 @@ Your branch is up to date with 'origin/master'-в вашей ветке обно
 получение изменений с гитхаба
 1) git fetch origin
 
-удаление ветки локально после слияния
-git branch -d <name branch>
 Удаление ветки на гитхабе после того как удалена локально.
 git push origin --delete <name branch>
 git push origin :<name branch>
@@ -127,9 +129,21 @@ git fetch --prune
 создание новой ветки
   git branch <name>
 переключиться на новую ветку
+  git switch <name>
   git checkout <name>
 создать ветку и сразу переключиться на неё
   git checkout -b <name>
+
+git merge <name>
+  Вливание одной ветки в другую.
+git branch --move <name> <new name>
+git branch -m <name>
+  Переименование ветки.
+
+git branch -d <name branch>
+  удаление ветки локально после слияния
+
+git rebase <name>
 
 
 
