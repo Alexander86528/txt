@@ -4,6 +4,15 @@
 
 2.2. Создание новой ветки
   git branch <name>
+
+удаление ветки
+  git branch --delete <name>
+  git branch -d <name>
+Принудительное удаление ветки(с изменениями)
+  git branch --delete --force <name>
+  git branch -d -f <name>
+  git branch -D <name>
+
   создание и переключение на новую ветку
     git checkout -b <name>
     git switch --create <name>
@@ -43,7 +52,6 @@
 2.6. Переключение на удалённую ветку
   git checkout <name>
   git switch --detach <name>
-
 
 
 5.3. Отправление ветки в удалённый репозитарий
