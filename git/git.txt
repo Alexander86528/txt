@@ -13,6 +13,9 @@ local storage-локальное хранилище
 issue - вопрос, проблема
 tracked - отслеживаемые
 untracked - неотслеживаемые
+ours - наш
+theirs - их
+
 
     КОНФИГУРАЦИЯ GIT
 git config --global user.name <name>
